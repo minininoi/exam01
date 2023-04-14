@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+    <body>
+        <form method="post" th:action="${/file/upload}" enctype="multipart/form-data"> <!--양식 데이터와 파일데이터 나뉘어져 Multipart/form-data-->
+            <input type="file" name="file">
+            <button type="submit">업로드</button>
+        </form>
+    </body>
+</html>
